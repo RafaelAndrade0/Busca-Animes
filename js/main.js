@@ -18,8 +18,9 @@ function getInfoAnime(value) {
         console.log(data);
         let output = '<h2>Resultados:</h2>'
         output = `            
-            <img src="${data.image}" align="left" height="200" width="150">
+            <img src="${data.image}" align="left" class="img-responsive">
             <h3>Título: ${data.title}</h3>
+            <p>Sinopse: ${data.synopsis}</p>
             <p>Passou/Passa durante: ${data.aired}</p>
             <p>Onde: ${data.type}</p>
             <p>Episodios: ${data.episodes}</p>
